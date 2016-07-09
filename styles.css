@@ -1,0 +1,12 @@
+body
+{
+  background-color: lightgrey;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 14;
+}
+
+div#header
+{
+  background-color: grey;
+}
