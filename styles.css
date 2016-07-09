@@ -28,7 +28,14 @@ div#header
 h1
 {
   font-size: 100px;
-  color: lightblue;
+  color: rgba(30, 133, 174, 0.7);
   font-family: fantasy;
+  text-shadow: 2px 2px rgba(50, 50, 50, 0.4);
   margin: 0px;
+}
+
+p.subtitle
+{
+  color: lightblue;
+  text-shadow: 1px 1px slategrey;
 }
