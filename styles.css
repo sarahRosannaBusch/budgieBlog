@@ -2,11 +2,11 @@ body
 {
   background-color: lightgrey;
   text-align: center;
-  font-family: fantasy;
+  font-family: cursive;
   font-size: 14;
 }
 
 div#header
 {
-  background-color: grey;
+  background-image: url("https://lh3.googleusercontent.com/-WVtuvlnYsO0/V4FNRT0uJ2I/AAAAAAAAJzY/uG_gCoehzq85fLGM7qTQcVe4zVaY27bEwCCo/s800/IMG_20160604_171144415.jpg");
 }
