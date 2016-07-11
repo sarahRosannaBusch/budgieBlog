@@ -67,9 +67,20 @@ h2#listTitle
   padding-left: 20px;
 }
 
-p
+p.post
 {
   margin-top: 0px;
+  padding-left: 20px;
+  float: left;
+  display: inline;
+  width: 49%;
+}
+
+iframe.video
+{
+  float: left;
+  display: inline;
+  width: 49%;
 }
 
 @media only screen and (max-width: 620px)
@@ -86,4 +97,17 @@ p
     {
       width: 100%;
     }
+}
+
+@media only screen and (max-width: 850px)
+{
+  iframe.video
+  {
+    width: 95%;
+  }
+  p.post
+  {
+    width: 90%;
+    margin-top: 10px;
+  }
 }
