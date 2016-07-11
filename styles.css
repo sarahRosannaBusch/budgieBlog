@@ -6,8 +6,7 @@
 body
 {
   background-color: black;
-  text-align: center;
-  font-family: cursive;
+  font-family: sans-serif;
   font-size: 14;
   color: lightgrey;
   margin: auto;
@@ -25,6 +24,27 @@ div#header
   padding-right: 20px;
 }
 
+div#contentList
+{
+  width: 25%;
+  float: left;
+  text-align: left;
+  padding: 10px;
+  color: skyblue;
+  font-family: sans-serif;
+}
+
+div#post
+{
+  width: 75%;
+  float: left;
+  margin-top: 10px;
+  padding: 25px;
+  color: black;
+  font-family: serif;
+  background-color: palegoldenrod;
+}
+
 h1
 {
   font-size: 100px;
@@ -36,6 +56,18 @@ h1
 
 p.subtitle
 {
+  font-size: 20px;
   color: lightblue;
   text-shadow: 1px 1px slategrey;
+  font-family: cursive;
+}
+
+h2#listTitle
+{
+  padding-left: 20px;
+}
+
+p
+{
+  margin-top: 0px;
 }
