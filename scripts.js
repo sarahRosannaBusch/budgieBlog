@@ -8,7 +8,7 @@ function onload()
     ;
 
   document.getElementById("contentList").innerHTML =
-    "<h2 id='listTitle'> Table of Contents!!! </h2>" +
+    "<h2 id='listTitle'> Table of Contents </h2>" +
     "<a href='index.html'><div class='topic'>" +
       "<h3 class=topic'> Home </h3>" +
     "</div></a>" +
