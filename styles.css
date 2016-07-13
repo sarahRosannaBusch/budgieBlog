@@ -167,22 +167,6 @@ iframe.video
   width: 49%;
 }
 
-@media only screen and (max-width: 620px)
-{
-    h1
-    {
-      font-size: 75px;
-    }
-    div#contentList
-    {
-      width: 100%;
-    }
-    div#post
-    {
-      width: 100%;
-    }
-}
-
 @media only screen and (max-width: 850px)
 {
   iframe.video
@@ -198,4 +182,20 @@ iframe.video
     width: 90%;
     margin-top: 15px;
   }
+}
+
+@media only screen and (max-width: 620px)
+{
+    h1
+    {
+      font-size: 75px;
+    }
+    div#contentList
+    {
+      width: 100%;
+    }
+    div.post
+    {
+      width: 100%;
+    }
 }
