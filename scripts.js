@@ -15,5 +15,7 @@ document.getElementById("contentList").innerHTML =
   ;
 
 document.getElementById("footer").innerHTML =
-  "<hr>"
+  "<hr>" +
+  "<p class='footer'> Site created by: Sarah Rosanna Busch </p>" +
+  "<p class='footer'> Contact: annarose0113@gmail.com </p>"
   ;

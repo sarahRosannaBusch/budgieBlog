@@ -12,6 +12,8 @@ body
   margin: auto;
 }
 
+/****************************** Header Styles *********************************/
+
 div#header
 {
   background-image: url('https://lh3.googleusercontent.com/-WVtuvlnYsO0/V4FNRT0uJ2I/AAAAAAAAJz0/kphCsUglDRsS2P0-Cm-HxFGmAveSC9vRQCCo/s800/IMG_20160604_171144415.jpg');
@@ -22,51 +24,6 @@ div#header
   height: 20%;
   text-align: right;
   padding-right: 20px;
-}
-
-div#contentList
-{
-  width: 25%;
-  float: left;
-  text-align: left;
-  padding: 10px;
-  color: skyblue;
-  font-family: sans-serif;
-}
-
-div#footer
-{
-  float: left;
-  width: 100%;
-  height: 100px;
-  margin-top: 10px;
-}
-
-hr
-{
-  height: 1px;
-  margin-top: 0px;
-  background-color: slategrey;
-  border: 0 none;
-}
-
-div.post
-{
-  width: 75%;
-  float: left;
-  margin-top: 10px;
-  padding: 25px;
-  padding-right: 5px;
-  color: black;
-  font-family: serif;
-  background-color: palegoldenrod;
-}
-
-img.postPic
-{
-  float: left;
-  display: inline;
-  width: 49%;
 }
 
 h1
@@ -84,6 +41,18 @@ p.subtitle
   color: lightblue;
   text-shadow: 1px 1px slategrey;
   font-family: cursive;
+}
+
+/************************** Content List Styles *******************************/
+
+div#contentList
+{
+  width: 25%;
+  float: left;
+  text-align: left;
+  padding: 10px;
+  color: skyblue;
+  font-family: sans-serif;
 }
 
 h2#listTitle
@@ -151,10 +120,31 @@ ul
   font-size: 14px;
 }
 
+/******************************* Post Styles **********************************/
+
+div.post
+{
+  width: 75%;
+  float: left;
+  margin-top: 10px;
+  padding: 25px;
+  padding-right: 5px;
+  color: black;
+  font-family: serif;
+  background-color: palegoldenrod;
+}
+
+img.postPic
+{
+  float: left;
+  display: inline;
+  width: 49%;
+}
+
 p.post
 {
   margin-top: 0px;
-  padding-left: 20px;
+  padding-left: 0px;
   float: left;
   display: inline;
   width: 49%;
@@ -167,8 +157,59 @@ iframe.video
   width: 49%;
 }
 
+/****************************** Footer Styles *********************************/
+
+div#footer
+{
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 0px;
+  background: slategrey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top, rgb(24,24,24) , slategrey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, rgb(24,24,24) , slategrey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, rgb(24,24,24) , slategrey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, rgb(24,24,24) , slategrey); /* Standard syntax */
+
+}
+
+hr
+{
+  height: 3px;
+  margin-top: 3px;
+  background-color: black;
+  border: 0 none;
+}
+
+p.footer
+{
+  color: black;
+  padding-left: 20px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+/************************ Styles respond to screen size ***********************/
+
+@media only screen and (min-width: 850px)
+{
+  p.post
+  {
+    padding-left: 20px;
+  }
+}
+
 @media only screen and (max-width: 850px)
 {
+  h1
+  {
+    font-size: 75px;
+  }
+  p.subtitle
+  {
+    font-size: 20px;
+  }
   iframe.video
   {
     width: 95%;
@@ -184,11 +225,15 @@ iframe.video
   }
 }
 
-@media only screen and (max-width: 620px)
+@media only screen and (max-width: 600px)
 {
     h1
     {
-      font-size: 75px;
+      font-size: 60px;
+    }
+    p.subtitle
+    {
+      font-size: 15px;
     }
     div#contentList
     {
