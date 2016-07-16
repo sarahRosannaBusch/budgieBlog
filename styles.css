@@ -59,7 +59,36 @@ h2#listTitle
 {
   padding: 0px;
   margin: 0px;
+  margin-left: 5px;
   text-shadow: 1px 1px slategrey;
+}
+
+div.topic
+{
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: skyblue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, skyblue, rgba(30, 133, 174, 0.2)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, skyblue, rgba(30, 133, 174, 0.2)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, skyblue, rgba(30, 133, 174, 0.2)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, skyblue, rgba(30, 133, 174, 0.2)); /* Standard syntax */
+  width: 95%;
+  margin: 5px;
+}
+
+div.topicActive
+{
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: rgba(30, 133, 174, 0.2); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(255,215,0, 1), palegoldenrod); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(255,215,0, 1), palegoldenrod); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(255,215,0, 1), palegoldenrod); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,215,0, 1), palegoldenrod); /* Standard syntax */
+  width: 95%;
+  margin: 5px;
 }
 
 h3.topic
@@ -96,20 +125,6 @@ a.topic:visited
 a.topic:hover
 {
   color: gold;
-}
-
-div.topic
-{
-  padding-left: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background: skyblue; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, skyblue, rgba(30, 133, 174, 0.2)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, skyblue, rgba(30, 133, 174, 0.2)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, skyblue, rgba(30, 133, 174, 0.2)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, skyblue, rgba(30, 133, 174, 0.2)); /* Standard syntax */
-  width: 95%;
-  margin: 5px;
 }
 
 ul
@@ -164,12 +179,12 @@ div#footer
   float: left;
   width: 100%;
   margin-top: 10px;
-  padding-top: 0px;
+  padding: 0px;
   background: slategrey; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(top, black , slategrey); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top, black , slategrey); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top, black , slategrey); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to top, black , slategrey); /* Standard syntax */
+  background: -webkit-linear-gradient(slategrey, rgba(0, 0, 0, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(slategrey, rgba(0, 0, 0, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(slategrey, rgba(0, 0, 0, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(slategrey, rgba(0, 0, 0, 0)); /* Standard syntax */
 
 }
 
@@ -188,6 +203,31 @@ p.footer
   text-align: center;
   font-family: monospace;
   font-size: 13px;
+  posiition: absolute;
+}
+
+svg#flower
+{
+  width: 103px; /* 103px */
+  height: auto; /* 69px */
+  position: absolute;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+g#layer2
+{
+  visibility: hidden;
+}
+
+g#layer3
+{
+  visibility: hidden;
+}
+
+g#layer4
+{
+  visibility: hidden;
 }
 
 /************************ Styles respond to screen size ***********************/
