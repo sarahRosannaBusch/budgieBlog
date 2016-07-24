@@ -5,10 +5,15 @@ document.getElementById("header").innerHTML =
   "</p>"
   ;
 
+function goHome()
+{
+  window.open('index.html', '_self');
+}
+
 document.getElementById("contentList").innerHTML =
   "<h2 id='listTitle'> Table of Contents </h2>" +
   "<a href='index.html' class='topic'><div id='0-0' class='topic'> Home </div></a>" +
-  "<a href='1-0_WhyIGotABudgie.html' class='topic'><div id='1-0' class='topic'> Why I got a budgie </div></a>" +
+  "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Why I got a budgie </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Cage, toys, and perches </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Taming and training </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Food and poop </div></a>" +
@@ -24,7 +29,7 @@ document.getElementById("contentList").innerHTML =
     document.getElementById('2-0').className = 'topicActive';
 
 document.getElementById("footer").innerHTML =
-  "<hr>" +
+  "<hr class='footer'>" +
   "<svg id='flower' onclick='easterEgg()'>" +
     '<g id="layer4"' +
     '   inkscape:label="Layer 4">' +
@@ -84,8 +89,8 @@ document.getElementById("footer").innerHTML =
     '     sodipodi:nodetypes="scccssscccssscccssscccssscccscsssssss" />' +
     '</g>' +
   "</svg>" +
-  "<p class='footer'> Site created by: Sarah Rosanna Busch </p>" +
-  "<p class='footer'> Contact: annarose0113@gmail.com </p>" +
+  "<br><p class='footer'> Site created by: </p>" +
+  "<p class='footer'> annarose0113@gmail.com </p><br><br><br>" +
   "<br>"
   ;
 

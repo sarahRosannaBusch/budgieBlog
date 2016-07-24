@@ -28,7 +28,7 @@ div#header
 
 h1
 {
-  font-size: 100px;
+  font-size: 60px;
   color: rgba(30, 133, 174, 0.7);
   font-family: fantasy;
   text-shadow: 2px 2px rgba(50, 50, 50, 0.4);
@@ -37,17 +37,45 @@ h1
 
 p.subtitle
 {
-  font-size: 20px;
+  font-size: 15px;
   color: lightblue;
   text-shadow: 1px 1px slategrey;
   font-family: cursive;
+  margin-bottom: 10px;
+}
+
+/* default styles are for phone-sized screens; layout is responsive: */
+
+@media only screen and (min-width: 600px) /* tablet-sized */
+{
+  h1
+  {
+    font-size: 75px;
+  }
+  p.subtitle
+  {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 850px) /* full-screen */
+{
+  h1
+  {
+    font-size: 100px;
+  }
+
+  p.subtitle
+  {
+    font-size: 20px;
+  }
 }
 
 /************************** Content List Styles *******************************/
 
 div#contentList
 {
-  width: 25%;
+  width: 100%;
   float: left;
   text-align: left;
   padding: 10px;
@@ -124,7 +152,7 @@ a.topic:visited
 
 a.topic:hover
 {
-  color: gold;
+  color: palegoldenrod;
 }
 
 ul
@@ -135,28 +163,49 @@ ul
   font-size: 14px;
 }
 
+/* default styles are for phone-sized screens; layout is responsive: */
+
+@media only screen and (min-width: 600px) /* tablet-sized */
+{
+  div#contentList
+  {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 850px) /* full-screen */
+{
+
+}
+
 /******************************* Post Styles **********************************/
 
 div.post
 {
-  width: 75%;
+  width: 100%;
   float: left;
   margin-top: 10px;
-  padding: 25px;
-  padding-right: 5px;
+  padding: 20px;
   color: black;
   font-family: serif;
   background-color: palegoldenrod;
+}
+
+div.column
+{
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
 }
 
 h2.pageTitle
 {
   margin: 0px;
   padding-bottom: 10px;
-  color: green;
+  color: rgba(30, 133, 174, 0.7);
   font-family: fantasy;
   font-size: 40px;
-  text-shadow: 2px 2px rgba(50, 50, 50, 0.4);
+  text-shadow: 1px 1px rgba(50, 50, 50, 0.4);
 }
 
 h3.postTitle
@@ -164,35 +213,60 @@ h3.postTitle
   font-family: sans-serif;
   color: skyblue;
   margin: 0px;
+  text-shadow: 1px 1px slategrey;
 }
 
-p.blurb
+p
 {
-  padding-right: 10px;
-  margin-top: 0px;
-}
-
-p.post
-{
-  margin-top: 0px;
+  margin: 0px;
   padding-left: 0px;
-  float: left;
-  display: inline;
-  width: 49%;
 }
 
-img.postPic
+img.photo
 {
-  float: left;
-  display: inline;
-  width: 49%;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 iframe.video
 {
-  float: left;
-  display: inline;
-  width: 49%;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+/* default styles are for phone-sized screens; layout is responsive: */
+
+@media only screen and (min-width: 600px) /* tablet-sized */
+{
+  div.post
+  {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 850px) /* full-screen */
+{
+  div.post
+  {
+    padding-right: 0px;
+  }
+
+  div.column
+  {
+    float: left;
+    width: 49%;
+  }
+
+  div#columnLeft
+  {
+    padding-right: 10px;
+  }
+
+  div#columnRight
+  {
+    padding-left: 10px;
+    margin-top: 55px;
+  }
 }
 
 /****************************** Footer Styles *********************************/
@@ -211,10 +285,11 @@ div#footer
 
 }
 
-hr
+hr.footer
 {
   height: 3px;
   margin-top: 3px;
+  margin-bottom: 0px;
   background-color: black;
   border: 0 none;
 }
@@ -222,7 +297,6 @@ hr
 p.footer
 {
   color: black;
-  padding-left: 20px;
   text-align: center;
   font-family: monospace;
   font-size: 13px;
@@ -234,8 +308,7 @@ svg#flower
   width: 103px; /* 103px */
   height: auto; /* 69px */
   position: absolute;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  padding: 3px;
 }
 
 g#layer2
@@ -253,57 +326,14 @@ g#layer4
   visibility: hidden;
 }
 
-/************************ Styles respond to screen size ***********************/
+/* default styles are for phone-sized screens; layout is responsive: */
 
-@media only screen and (min-width: 850px)
+@media only screen and (min-width: 600px) /* tablet-sized */
 {
-  p.post
-  {
-    padding-left: 20px;
-  }
+
 }
 
-@media only screen and (max-width: 850px)
+@media only screen and (min-width: 850px) /* full-screen */
 {
-  h1
-  {
-    font-size: 75px;
-  }
-  p.subtitle
-  {
-    font-size: 20px;
-  }
-  iframe.video
-  {
-    width: 95%;
-  }
-  img.postPic
-  {
-    width: 95%;
-  }
-  p.post
-  {
-    width: 90%;
-    margin-top: 15px;
-  }
-}
 
-@media only screen and (max-width: 600px)
-{
-    h1
-    {
-      font-size: 60px;
-    }
-    p.subtitle
-    {
-      font-size: 15px;
-    }
-    div#contentList
-    {
-      width: 100%;
-    }
-    div.post
-    {
-      width: 100%;
-    }
 }
