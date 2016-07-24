@@ -155,14 +155,6 @@ a.topic:hover
   color: palegoldenrod;
 }
 
-ul
-{
-  list-style-type: circle;
-  margin: 0px;
-  font-family: monospace;
-  font-size: 14px;
-}
-
 /* default styles are for phone-sized screens; layout is responsive: */
 
 @media only screen and (min-width: 600px) /* tablet-sized */
@@ -232,6 +224,50 @@ iframe.video
 {
   width: 100%;
   padding-bottom: 10px;
+}
+
+a.blurbLink:link
+{
+  text-decoration: none;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: skyblue;
+  text-shadow: 1px 1px slategrey;
+}
+
+a.blurbLink:visited
+{
+  text-decoration: none;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: rgba(30, 133, 174, 0.7);
+  text-shadow: 1px 1px slategrey;
+}
+
+a.blurbLink:hover
+{
+  text-decoration: underline;
+}
+
+a.recentPosts:link
+{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.recentPosts:visited
+{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.recentPosts:hover
+{
+  text-decoration: underline;
 }
 
 /* default styles are for phone-sized screens; layout is responsive: */

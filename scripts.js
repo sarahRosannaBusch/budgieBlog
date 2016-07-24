@@ -13,7 +13,7 @@ function goHome()
 document.getElementById("contentList").innerHTML =
   "<h2 id='listTitle'> Table of Contents </h2>" +
   "<a href='index.html' class='topic'><div id='0-0' class='topic'> Home </div></a>" +
-  "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Why I got a budgie </div></a>" +
+  "<a href='1-0_WhyIGotABudgie.html' class='topic'><div id='1-0' class='topic'> Why I got a budgie </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Cage, toys, and perches </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Taming and training </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Food and poop </div></a>" +
