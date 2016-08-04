@@ -23,9 +23,9 @@ document.getElementById("contentList").innerHTML =
 
   if(window.location.href.match('index.html'))
     document.getElementById('0-0').className = 'topicActive';
-  if(window.location.href.match('1-0'))
+  if(window.location.href.match('1-'))
     document.getElementById('1-0').className = 'topicActive';
-  if(window.location.href.match('2-0'))
+  if(window.location.href.match('2-'))
     document.getElementById('2-0').className = 'topicActive';
 
 document.getElementById("footer").innerHTML =
