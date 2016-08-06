@@ -16,7 +16,7 @@ body
 
 div#header
 {
-  background-image: url('photos/0_banner.jpg');
+  background-image: url('0_banner.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
