@@ -16,7 +16,7 @@ body
 
 div#header
 {
-  background-image: url('https://lh3.googleusercontent.com/-WVtuvlnYsO0/V4FNRT0uJ2I/AAAAAAAAJz0/kphCsUglDRsS2P0-Cm-HxFGmAveSC9vRQCCo/s800/IMG_20160604_171144415.jpg');
+  background-image: url('photos/0_banner.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -154,6 +154,56 @@ a.topic:visited
 a.topic:hover
 {
   color: palegoldenrod;
+}
+
+                           /*** Sub-Topics ***/
+
+div.subTopics
+{
+  padding-left: 15px;
+  font-size: 15px;
+  display:none;
+}
+
+div#topicOne
+{
+  display: none;
+}
+
+div#showTopicOne
+{
+  display: block;
+}
+
+a.subTopic:link
+{
+  color: skyblue;
+  text-decoration: none;
+}
+
+a.subTopic:visited
+{
+  color: skyblue;
+  text-decoration: none;
+}
+
+a.subTopic:hover
+{
+  color: palegoldenrod;
+}
+
+a.subTopicActive:link
+{
+  color: skyblue;
+  text-shadow: 1px 1px gold;
+  text-decoration: none;
+}
+
+a.subTopicActive:visited
+{
+  color: skyblue;
+  text-shadow: 1px 1px gold;
+  text-decoration: none;
 }
 
 /* default styles are for phone-sized screens; layout is responsive: */
