@@ -18,6 +18,7 @@ document.getElementById("contentList").innerHTML =
     "<a id='1-1' class='subTopic' href='1-1_GrowingUpWithPets.html'> - Growing Up With Pets </a><br>" +
     "<a id='1-2' class='subTopic' href='1-2_Deciding.html'> - Deciding To Get a Pet Again </a><br>" +
     "<a id='1-3' class='subTopic' href='1-3_InspiringBirdVideos.html'> - Inspiring Bird Videos </a><br>" +
+    "<a id='1-4' class='subTopic' href='1-4_Ethics.html'> - Ethics of Pet Keeping </a><br>" +
     "</div>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Cage, toys, and perches </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Taming and training </div></a>" +
@@ -38,6 +39,8 @@ document.getElementById("contentList").innerHTML =
       document.getElementById('1-2').className = 'subTopicActive';
     if(window.location.href.match('1-3'))
       document.getElementById('1-3').className = 'subTopicActive';
+    if(window.location.href.match('1-4'))
+      document.getElementById('1-4').className = 'subTopicActive';
   }
   if(window.location.href.match('2-'))
     document.getElementById('2-0').className = 'topicActive';
