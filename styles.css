@@ -160,19 +160,14 @@ a.topic:hover
 
 div.subTopics
 {
-  padding-left: 15px;
-  font-size: 15px;
   display:none;
 }
 
-div#topicOne
-{
-  display: none;
-}
-
-div#showTopicOne
+div.showTopic
 {
   display: block;
+  padding-left: 15px;
+  font-size: 15px;
 }
 
 a.subTopic:link

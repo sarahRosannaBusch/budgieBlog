@@ -23,7 +23,10 @@ document.getElementById("contentList").innerHTML =
     "<a id='1-6' class='subTopic' href='1-6_ChoosingApollo.html'> - Choosing Apollo </a><br>" +
     "</div>" +
   "<a href='2-0_CagesToysPerches.html' class='topic'><div id='2-0' class='topic'> Cage, toys, and perches </div></a>" +
-  "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Taming and training </div></a>" +
+  "<a href='3-0_TamingAndTraining.html' class='topic'><div id='3-0' class='topic'> Taming and training </div></a>" +
+    "<div class='subTopics' id='topicThree'>" +
+    "<a id='3-1' class='subTopic' href='3-1_BuildingTrust.html'> - Building Trust </a><br>" +
+    "</div>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Food and poop </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Feathers, beak, and toes </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Can I still travel? </div></a>"
@@ -35,7 +38,7 @@ document.getElementById("contentList").innerHTML =
   {
     document.getElementById('0-0').className = 'topic';
     document.getElementById('1-0').className = 'topicActive'; //topic highlighted
-    document.getElementById('topicOne').id = 'showTopicOne'; //show sub-topics
+    document.getElementById('topicOne').className = 'showTopic'; //show sub-topics
     if(window.location.href.match('1-1'))
       document.getElementById('1-1').className = 'subTopicActive'; //highlight subtopic selected
     if(window.location.href.match('1-2'))
@@ -53,6 +56,14 @@ document.getElementById("contentList").innerHTML =
   {
     document.getElementById('0-0').className = 'topic';
     document.getElementById('2-0').className = 'topicActive';
+  }
+  if(window.location.href.match('3-'))
+  {
+    document.getElementById('0-0').className = 'topic';
+    document.getElementById('3-0').className = 'topicActive';
+    document.getElementById('topicThree').className = 'showTopic'; //show sub-topics
+    if(window.location.href.match('3-1'))
+      document.getElementById('3-1').className = 'subTopicActive'; //highlight subtopic selected
   }
 
 document.getElementById("footer").innerHTML =
