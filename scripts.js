@@ -26,6 +26,7 @@ document.getElementById("contentList").innerHTML =
   "<a href='3-0_TamingAndTraining.html' class='topic'><div id='3-0' class='topic'> Taming and training </div></a>" +
     "<div class='subTopics' id='topicThree'>" +
     "<a id='3-1' class='subTopic' href='3-1_BuildingTrust.html'> - Building Trust </a><br>" +
+    "<a id='3-2' class='subTopic' href='3-2_GettingOut.html'> - Getting Out of the Cage </a><br>" +
     "</div>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Food and poop </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Feathers, beak, and toes </div></a>" +
@@ -64,6 +65,8 @@ document.getElementById("contentList").innerHTML =
     document.getElementById('topicThree').className = 'showTopic'; //show sub-topics
     if(window.location.href.match('3-1'))
       document.getElementById('3-1').className = 'subTopicActive'; //highlight subtopic selected
+    if(window.location.href.match('3-2'))
+      document.getElementById('3-2').className = 'subTopicActive';
   }
 
 document.getElementById("footer").innerHTML =
@@ -128,7 +131,7 @@ document.getElementById("footer").innerHTML =
     '</g>' +
   "</svg>" +
   "<br><p class='footer'> Site created by: </p>" +
-  "<p class='footer'> annarose0113@gmail.com </p><br><br><br>" +
+  "<p class='footer'><a href='https://sarahrosannabusch.github.io/' class='footer' target='_blank'> annarose0113@gmail.com </a></p><br><br><br>" +
   "<br>"
   ;
 

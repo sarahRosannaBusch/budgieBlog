@@ -266,6 +266,13 @@ img.photo
   padding-bottom: 10px;
 }
 
+img.threePhotos
+{
+  width: 32%;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
 iframe.video
 {
   width: 100%;
@@ -420,6 +427,26 @@ p.footer
   font-family: monospace;
   font-size: 13px;
   posiition: absolute;
+}
+
+a.footer:link
+{
+  color: black;
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  posiition: absolute;
+  text-decoration: none;
+}
+
+a.footer:visited
+{
+  color: black;
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  posiition: absolute;
+  text-decoration: none;
 }
 
 svg#flower
