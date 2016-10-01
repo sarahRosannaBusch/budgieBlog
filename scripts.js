@@ -22,7 +22,10 @@ document.getElementById("contentList").innerHTML =
     "<a id='1-5' class='subTopic' href='1-5_WhereDoIGetABird.html'> - Where Do I Get a Bird? </a><br>" +
     "<a id='1-6' class='subTopic' href='1-6_ChoosingApollo.html'> - Choosing Apollo </a><br>" +
     "</div>" +
-  "<a href='2-0_CagesToysPerches.html' class='topic'><div id='2-0' class='topic'> Cage, toys, and perches </div></a>" +
+  "<a href='2-0_CagesToysPerches.html' class='topic'><div id='2-0' class='topic'> Cages, toys, and perches </div></a>" +
+    "<div class='subTopics' id='topicTwo'>" +
+    "<a id='2-1' class='subTopic' href='2-1_Cages.html'> - Cages </a><br>" +
+    "</div>" +
   "<a href='3-0_TamingAndTraining.html' class='topic'><div id='3-0' class='topic'> Taming and training </div></a>" +
     "<div class='subTopics' id='topicThree'>" +
     "<a id='3-1' class='subTopic' href='3-1_BuildingTrust.html'> - Building Trust </a><br>" +
@@ -56,7 +59,10 @@ document.getElementById("contentList").innerHTML =
   if(window.location.href.match('2-'))
   {
     document.getElementById('0-0').className = 'topic';
-    document.getElementById('2-0').className = 'topicActive';
+    document.getElementById('2-0').className = 'topicActive'; //topic highlighted
+    document.getElementById('topicTwo').className = 'showTopic'; //show sub-topics
+    if(window.location.href.match('2-1'))
+      document.getElementById('2-1').className = 'subTopicActive'; //highlight subtopic selected
   }
   if(window.location.href.match('3-'))
   {
