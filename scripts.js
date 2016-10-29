@@ -26,6 +26,7 @@ document.getElementById("contentList").innerHTML =
     "<div class='subTopics' id='topicTwo'>" +
     "<a id='2-1' class='subTopic' href='2-1_Cages.html'> - Cages </a><br>" +
     "<a id='2-2' class='subTopic' href='2-2_EssentialPerches.html'> - Essential Perches </a><br>" +
+    "<a id='2-3' class='subTopic' href='2-3_Boing.html'> - Rope Boing and Kabobs </a><br>" +
     "</div>" +
   "<a href='3-0_TamingAndTraining.html' class='topic'><div id='3-0' class='topic'> Taming and training </div></a>" +
     "<div class='subTopics' id='topicThree'>" +
@@ -66,6 +67,8 @@ document.getElementById("contentList").innerHTML =
       document.getElementById('2-1').className = 'subTopicActive'; //highlight subtopic selected
     if(window.location.href.match('2-2'))
       document.getElementById('2-2').className = 'subTopicActive';
+    if(window.location.href.match('2-3'))
+      document.getElementById('2-3').className = 'subTopicActive';
   }
   if(window.location.href.match('3-'))
   {
