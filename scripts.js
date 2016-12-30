@@ -32,6 +32,7 @@ document.getElementById("contentList").innerHTML =
     "<div class='subTopics' id='topicThree'>" +
     "<a id='3-1' class='subTopic' href='3-1_BuildingTrust.html'> - Building Trust </a><br>" +
     "<a id='3-2' class='subTopic' href='3-2_GettingOut.html'> - Getting Out of the Cage </a><br>" +
+    "<a id='3-3' class='subTopic' href='3-3_LearningToFly.html'> - Learning to Fly, Again </a><br>" +
     "</div>" +
   "<a href='4-0_FoodAndPoop.html' class='topic'><div id='4-0' class='topic'> Food and poop </div></a>" +
   "<a href='comingSoon.html' class='topic'><div id='' class='topic'> Feathers, beak, and toes </div></a>" +
@@ -79,6 +80,8 @@ document.getElementById("contentList").innerHTML =
       document.getElementById('3-1').className = 'subTopicActive'; //highlight subtopic selected
     if(window.location.href.match('3-2'))
       document.getElementById('3-2').className = 'subTopicActive';
+    if(window.location.href.match('3-3'))
+      document.getElementById('3-3').className = 'subTopicActive';
   }
   if(window.location.href.match('4-'))
   {
