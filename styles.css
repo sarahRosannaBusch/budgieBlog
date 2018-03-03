@@ -12,21 +12,71 @@ body
   margin: auto;
 }
 
+/****************************** Header Styles *********************************/
+
 div#header
 {
-  background-image: url('https://lh3.googleusercontent.com/-WVtuvlnYsO0/V4FNRT0uJ2I/AAAAAAAAJz0/kphCsUglDRsS2P0-Cm-HxFGmAveSC9vRQCCo/s800/IMG_20160604_171144415.jpg');
+  background-image: url('0_banner.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 20%;
   text-align: right;
   padding-right: 20px;
 }
 
+h1
+{
+  font-size: 60px;
+  color: rgba(30, 133, 174, 0.7);
+  font-family: fantasy;
+  text-shadow: 2px 2px rgba(50, 50, 50, 0.4);
+  margin: 0px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+p.subtitle
+{
+  font-size: 15px;
+  color: lightblue;
+  text-shadow: 1px 1px slategrey;
+  font-family: cursive;
+  padding-bottom: 10px;
+}
+
+/* default styles are for phone-sized screens; layout is responsive: */
+
+@media only screen and (min-width: 600px) /* tablet-sized */
+{
+  h1
+  {
+    font-size: 75px;
+  }
+  p.subtitle
+  {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 850px) /* full-screen */
+{
+  h1
+  {
+    font-size: 100px;
+  }
+
+  p.subtitle
+  {
+    font-size: 20px;
+  }
+}
+
+/************************** Content List Styles *******************************/
+
 div#contentList
 {
-  width: 25%;
+  width: 100%;
   float: left;
   text-align: left;
   padding: 10px;
@@ -34,40 +84,402 @@ div#contentList
   font-family: sans-serif;
 }
 
-div#post
+h2#listTitle
 {
-  width: 75%;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 5px;
+  text-shadow: 1px 1px slategrey;
+}
+
+div.topic
+{
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: skyblue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, skyblue, rgba(30, 133, 174, 0.2)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, skyblue, rgba(30, 133, 174, 0.2)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, skyblue, rgba(30, 133, 174, 0.2)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, skyblue, rgba(30, 133, 174, 0.2)); /* Standard syntax */
+  width: 95%;
+  margin: 5px;
+}
+
+div.topicActive
+{
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: rgba(30, 133, 174, 0.2); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(255,215,0, 1), palegoldenrod); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(255,215,0, 1), palegoldenrod); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(255,215,0, 1), palegoldenrod); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,215,0, 1), palegoldenrod); /* Standard syntax */
+  width: 95%;
+  margin: 5px;
+}
+
+h3.topic
+{
+  padding-left: 20px;
+  margin: 0px;
+  font-family: sans-serif;
+  color: black;
+  text-shadow: 1px 1px slategrey;
+}
+
+a.topic:link
+{
+  margin: 0px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: black;
+  text-shadow: 1px 1px slategrey;
+  text-decoration: none;
+}
+
+a.topic:visited
+{
+  margin: 0px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: black;
+  text-shadow: 1px 1px slategrey;
+  text-decoration: none;
+}
+
+a.topic:hover
+{
+  color: palegoldenrod;
+}
+
+                           /*** Sub-Topics ***/
+
+div.subTopics
+{
+  display:none;
+}
+
+div.showTopic
+{
+  display: block;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+a.subTopic:link
+{
+  color: skyblue;
+  text-decoration: none;
+}
+
+a.subTopic:visited
+{
+  color: skyblue;
+  text-decoration: none;
+}
+
+a.subTopic:hover
+{
+  color: palegoldenrod;
+}
+
+a.subTopicActive:link
+{
+  color: skyblue;
+  text-shadow: 1px 1px gold;
+  text-decoration: none;
+}
+
+a.subTopicActive:visited
+{
+  color: skyblue;
+  text-shadow: 1px 1px gold;
+  text-decoration: none;
+}
+
+/* default styles are for phone-sized screens; layout is responsive: */
+
+@media only screen and (min-width: 600px) /* tablet-sized */
+{
+  div#contentList
+  {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 850px) /* full-screen */
+{
+
+}
+
+/******************************* Post Styles **********************************/
+
+div.post
+{
+  width: 100%;
   float: left;
   margin-top: 10px;
-  padding: 25px;
+  padding: 20px;
   color: black;
   font-family: serif;
   background-color: palegoldenrod;
 }
 
-h1
+div.column
 {
-  font-size: 100px;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+
+h2.pageTitle
+{
+  margin: 0px;
+  padding-bottom: 10px;
   color: rgba(30, 133, 174, 0.7);
   font-family: fantasy;
-  text-shadow: 2px 2px rgba(50, 50, 50, 0.4);
+  font-size: 40px;
+  text-shadow: 1px 1px rgba(50, 50, 50, 0.4);
+}
+
+h3.postTitle
+{
+  font-family: sans-serif;
+  color: skyblue;
   margin: 0px;
-}
-
-p.subtitle
-{
-  font-size: 20px;
-  color: lightblue;
   text-shadow: 1px 1px slategrey;
-  font-family: cursive;
-}
-
-h2#listTitle
-{
-  padding-left: 20px;
 }
 
 p
 {
-  margin-top: 0px;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+img.photo
+{
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+img.threePhotos
+{
+  width: 32%;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+iframe.video
+{
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+a.blurbLink:link
+{
+  text-decoration: none;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: skyblue;
+  text-shadow: 1px 1px slategrey;
+}
+
+a.blurbLink:visited
+{
+  text-decoration: none;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: rgba(30, 133, 174, 0.7);
+  text-shadow: 1px 1px slategrey;
+}
+
+a.blurbLink:hover
+{
+  text-decoration: underline;
+}
+
+a.recentPosts:link
+{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.recentPosts:visited
+{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.recentPosts:hover
+{
+  text-decoration: underline;
+}
+
+                        /*** Nav Buttons ***/
+
+div.navButtons
+{
+  width: 100%;
+  display: inline-block;
+}
+
+div.button
+{
+  width: 50%;
+  float: left;
+}
+
+a.button:link
+{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(30, 133, 174, 0.7);
+  font-family: sans-serif;
+}
+
+a.button:visited
+{
+  color: rgba(30, 133, 174, 0.7);
+}
+
+div#next
+{
+  text-align: right;
+}
+
+/* default styles are for phone-sized screens; layout is responsive: */
+
+@media only screen and (min-width: 600px) /* tablet-sized */
+{
+  div.post
+  {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 850px) /* full-screen */
+{
+  div.post
+  {
+    padding-right: 0px;
+  }
+
+  div.column
+  {
+    float: left;
+    width: 49%;
+  }
+
+  div#columnLeft
+  {
+    padding-right: 10px;
+  }
+
+  div#columnRight
+  {
+    padding-left: 10px;
+    margin-top: 55px;
+  }
+
+  div#next
+  {
+    padding-right: 20px;
+  }
+}
+
+/****************************** Footer Styles *********************************/
+
+div#footer
+{
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0px;
+  background: slategrey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(slategrey, rgba(0, 0, 0, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(slategrey, rgba(0, 0, 0, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(slategrey, rgba(0, 0, 0, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(slategrey, rgba(0, 0, 0, 0)); /* Standard syntax */
+
+}
+
+hr.footer
+{
+  height: 3px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  background-color: black;
+  border: 0 none;
+}
+
+p.footer
+{
+  color: black;
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  posiition: absolute;
+}
+
+a.footer:link
+{
+  color: black;
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  posiition: absolute;
+  text-decoration: none;
+}
+
+a.footer:visited
+{
+  color: black;
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  posiition: absolute;
+  text-decoration: none;
+}
+
+svg#flower
+{
+  width: 103px; /* 103px */
+  height: auto; /* 69px */
+  position: absolute;
+  padding: 3px;
+}
+
+g#layer2
+{
+  visibility: hidden;
+}
+
+g#layer3
+{
+  visibility: hidden;
+}
+
+g#layer4
+{
+  visibility: hidden;
+}
+
+/* default styles are for phone-sized screens; layout is responsive: */
+
+@media only screen and (min-width: 600px) /* tablet-sized */
+{
+
+}
+
+@media only screen and (min-width: 850px) /* full-screen */
+{
+
 }

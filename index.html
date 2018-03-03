@@ -4,38 +4,65 @@
   <title> Budgie Blog </title>
   <meta charset='UTF-8'> <!-- 16-bit Unicode -->
   <meta name='author' content='Sarah Rosanna Busch'>
-  <meta name='description' content='A blog about my budgie, Apollo.'>
+  <meta name='description' content='Homepage of my blog about living with Apollo the Budgerigar.'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for responsive design -->
   <link rel='stylesheet' href='styles.css'>
+  <link rel='icon shortcut' href='icon.png'>
+  <!-- Google Analytics: -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-81192188-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 <body>
-<div id='header'>
-  <h1> Budgie Blog </h1>
-  <p class='subtitle'>
-    Life with Apollo the Budgerigar
-  </p>
-</div>
-<div id='contentList'>
-  <h2 id='listTitle'> Table of Contents </h2>
-  <ol>
-    <li> Why I got a budgie </li>
-    <li> Choosing Apollo </li>
-    <li> Cage, toys, and perches </li>
-    <li> Food and poop </li>
-    <li> Taming and training </li>
-    <li> Feathers, nose, and toes </li>
-  </ol>
-</div>
-<div id='post'>
-  <p>
-    Welcome to my blog! I'm putting this site together to share what I have
-    learned about living with budgies. It may be of interest to any of you
-    who have parrots, or who are considering becoming an avian pet owner.
-    This site is still under construction so bear with me. Here is a video to
-    introduce you to my six-month old budgie, Apollo:
-  </p>
-  <iframe width="420" height="315" src="https://www.youtube.com/embed/MkY6lWmrtZs" frameborder="0" allowfullscreen></iframe>
-</div>
+  <div id='header' onclick='goHome()'></div>
+  <div id='contentList'></div>
+  <div class='post'>
+    <div class='column' id='columnLeft'>
+      <h2 class='pageTitle'> Home </h2>
+      <p>
+        Welcome to my budgie blog! I'm putting this site together to share some of the things I've
+        learned from living with a pet bird. And to show off how cool Apollo is.
+        It might be interesting to any of you who have parakeets, who are considering
+        becoming an avian pet owner, or who just want to check out some photos and videos
+        of Apollo.
+      </p>
+      <br>
+      <p>
+        This site is still under construction, so bear with me. I'll be adding new pages
+        regularly so keep checking back. I've designed the site so that it should work well on
+        any device (from smart phone to big screen tv), so if you find something
+        that isn't working, or that looks weird,
+        please let me know so I can fix it pronto. (You can find my email address
+        at the bottom of the page.) I welcome any other feedback you'd like to give
+        as well.
+      </p>
+      <br>
+      <p>
+        Can't wait to see more pictures of Apollo? Check out my post on
+        <a target='_blank' href='http://talkbudgies.com/budgie-pictures/361986-pictures-apollo-ongoing-thread.html'>
+          talkbudgies.com</a>.
+      </p>
+      <br>
+    </div>
+    <div class='column' id='columnRight'>
+      <p>
+        Here's a short video I put together of some of the fun Apollo and I had during
+        our first few months together:
+      </p>
+      <br>
+      <iframe class='video' width="420" height="315" src="https://www.youtube.com/embed/MkY6lWmrtZs?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class='navButtons'>
+      <div class='button' id='previous'><a href='index.html' class='button'> << </a></div>
+      <div class='button' id='next'><a href='1-0_WhyIGotABudgie.html' class='button'> >> </a></div>
+    </div>
+  </div>
+  <div id='footer'></div>
 </body>
-<script src='scripts.js' />
+<script src='scripts.js'></script>
 </html>
